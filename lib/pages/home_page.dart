@@ -1,3 +1,4 @@
+import 'package:erp_ui/pages/ask_doubt_page.dart';
 import 'package:erp_ui/theme.dart';
 <<<<<<< HEAD
 =======
@@ -184,7 +185,7 @@ class HomePage extends StatelessWidget {
                             width: 58,
                             height: 58,
                             decoration: BoxDecoration(
-                              color: whiteColor.withOpacity(0.6),
+                              color: lightGreyColor.withOpacity(0.7),
                               borderRadius: BorderRadius.circular(29),
                               border: Border.all(
                                 color: whiteColor,
@@ -262,9 +263,21 @@ class HomePage extends StatelessWidget {
                                   imageUrl: 'assets/ic_date_sheet.png',
                                   title: 'Date Sheet',
                                 ),
-                                CardMenu(
-                                  imageUrl: 'assets/ic_doubts.png',
-                                  title: 'Ask Doubts',
+                                InkWell(
+                                  onTap: () {
+                                    Navigator.push(
+                                      context,
+                                      MaterialPageRoute(
+                                        builder: (context) {
+                                          return AskDoubtPage();
+                                        },
+                                      ),
+                                    );
+                                  },
+                                  child: CardMenu(
+                                    imageUrl: 'assets/ic_doubts.png',
+                                    title: 'Ask Doubts',
+                                  ),
                                 ),
                                 CardMenu(
                                   imageUrl: 'assets/ic_gallery.png',
