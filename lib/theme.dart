@@ -3,6 +3,7 @@ import 'package:google_fonts/google_fonts.dart';
 
 final double defaultMargin = 30.0;
 
+Color blueColor = Color(0XFF6184C7);
 Color darkBlueColor = Color(0XFF345FB4);
 Color lightBlueColor = Color(0XFF6789CA);
 Color blackColor = Color(0XFF313131);
