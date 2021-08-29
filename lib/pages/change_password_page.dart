@@ -1,15 +1,15 @@
 import 'package:erp_ui/theme.dart';
 import 'package:flutter/material.dart';
 
-class AskDoubtPage extends StatelessWidget {
+class ChangePasswordPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       body: Stack(
         children: [
           Container(
-            width: double.infinity,
             height: double.infinity,
+            width: double.infinity,
             decoration: BoxDecoration(
               gradient: LinearGradient(
                 begin: Alignment.topLeft,
@@ -24,8 +24,8 @@ class AskDoubtPage extends StatelessWidget {
               children: [
                 Padding(
                   padding: EdgeInsets.only(
-                    top: 53,
-                    left: 17,
+                    left: 16,
+                    top: 52,
                   ),
                   child: Row(
                     children: [
@@ -34,10 +34,10 @@ class AskDoubtPage extends StatelessWidget {
                         color: whiteColor,
                       ),
                       SizedBox(
-                        width: 14,
+                        width: 15,
                       ),
                       Text(
-                        'Ask Doubt',
+                        'Change Password',
                         style: regularTextStyle.copyWith(
                           fontSize: 18,
                           color: whiteColor,
@@ -47,9 +47,7 @@ class AskDoubtPage extends StatelessWidget {
                   ),
                 ),
                 Padding(
-                  padding: EdgeInsets.symmetric(
-                    horizontal: 17,
-                  ),
+                  padding: EdgeInsets.symmetric(horizontal: 18),
                   child: Image.asset(
                     'assets/star_pattern.png',
                     width: double.infinity,
@@ -75,12 +73,14 @@ class AskDoubtPage extends StatelessWidget {
                 children: [
                   Padding(
                     padding: EdgeInsets.symmetric(
-                        horizontal: defaultMargin, vertical: 25),
+                      horizontal: defaultMargin,
+                      vertical: defaultMargin,
+                    ),
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
                         Text(
-                          'Class Teacher',
+                          'Old Password',
                           style: regularTextStyle.copyWith(
                             fontSize: 12,
                             color: lightGreyColor,
@@ -90,79 +90,85 @@ class AskDoubtPage extends StatelessWidget {
                           height: 8,
                         ),
                         Text(
-                          'Alexa Clark',
-                          style: semiBoldTextStyle.copyWith(
-                            fontSize: 16,
-                            color: lightBlackColor,
-                          ),
-                        ),
-                        SizedBox(
-                          height: 15,
-                        ),
-                        Divider(
-                          color: lightBlackColor,
-                        ),
-                        SizedBox(
-                          height: 25,
-                        ),
-                        Text(
-                          'Application Title',
-                          style: regularTextStyle.copyWith(
-                            fontSize: 12,
-                            color: lightGreyColor,
-                          ),
-                        ),
-                        SizedBox(
-                          height: 8,
-                        ),
-                        Text(
-                          'Fever',
-                          style: semiBoldTextStyle.copyWith(
-                            fontSize: 16,
-                            color: darkBlackColor,
-                          ),
-                        ),
-                        SizedBox(
-                          height: 15,
-                        ),
-                        Divider(
-                          color: lightBlackColor,
-                        ),
-                        SizedBox(
-                          height: 25,
-                        ),
-                        Text(
-                          'Description',
-                          style: regularTextStyle.copyWith(
-                            fontSize: 12,
-                            color: lightGreyColor,
-                          ),
-                        ),
-                        SizedBox(
-                          height: 8,
-                        ),
-                        Text(
-                          'Dear Sir, As I am suffering with viral fever I will not be able to attend the classes for Today. Please accept this request and kindly grant me leave.',
+                          '--',
                           style: semiBoldTextStyle.copyWith(
                             fontSize: 16,
                             color: blackColor,
                           ),
                         ),
                         SizedBox(
-                          height: 12,
+                          height: 15,
                         ),
                         Divider(
                           color: lightBlackColor,
+                        ),
+                        SizedBox(
+                          height: 25,
+                        ),
+                        Text(
+                          'New Password',
+                          style: regularTextStyle.copyWith(
+                            fontSize: 12,
+                            color: lightGreyColor,
+                          ),
+                        ),
+                        SizedBox(
+                          height: 8,
+                        ),
+                        Text(
+                          '--',
+                          style: semiBoldTextStyle.copyWith(
+                            fontSize: 16,
+                            color: blackColor,
+                          ),
+                        ),
+                        SizedBox(
+                          height: 15,
+                        ),
+                        Divider(
+                          color: lightBlackColor,
+                        ),
+                        SizedBox(
+                          height: 25,
+                        ),
+                        Text(
+                          'Retype Password',
+                          style: regularTextStyle.copyWith(
+                            fontSize: 12,
+                            color: lightGreyColor,
+                          ),
+                        ),
+                        SizedBox(
+                          height: 8,
+                        ),
+                        Text(
+                          '--',
+                          style: semiBoldTextStyle.copyWith(
+                            fontSize: 16,
+                            color: blackColor,
+                          ),
+                        ),
+                        SizedBox(
+                          height: 15,
+                        ),
+                        Divider(
+                          color: lightBlackColor,
+                        ),
+                        SizedBox(
+                          height: 25,
                         ),
                       ],
                     ),
                   ),
                   Padding(
-                    padding: EdgeInsets.symmetric(horizontal: defaultMargin),
+                    padding: EdgeInsets.symmetric(
+                      horizontal: defaultMargin,
+                    ),
                     child: Container(
                       height: 54,
                       width: double.infinity,
                       decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(10),
                         gradient: LinearGradient(
                           begin: Alignment.centerLeft,
                           end: Alignment.centerRight,
@@ -171,11 +177,10 @@ class AskDoubtPage extends StatelessWidget {
                             lightBlueColor,
                           ],
                         ),
-                        borderRadius: BorderRadius.circular(10),
                       ),
                       child: Center(
                         child: Text(
-                          'SEND REQUEST',
+                          'CHANGE PASSWORD',
                           style: semiBoldTextStyle.copyWith(
                             fontSize: 16,
                             color: whiteColor,
@@ -193,7 +198,7 @@ class AskDoubtPage extends StatelessWidget {
                 ],
               ),
             ),
-          )
+          ),
         ],
       ),
     );
