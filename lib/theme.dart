@@ -10,6 +10,7 @@ Color blackColor = Color(0XFF313131);
 Color darkGreyColor = Color(0XFF313131);
 Color lightGreyColor = Color(0XFFA5A5A5);
 Color whiteColor = Color(0XFFFFFFFF);
+Color cardHomeColor = Color(0XFFF5F6FC);
 
 TextStyle regularTextStyle = GoogleFonts.sourceSansPro(
   fontWeight: FontWeight.w400,
@@ -21,4 +22,8 @@ TextStyle semiBoldTextStyle = GoogleFonts.sourceSansPro(
 
 TextStyle boldTextStyle = GoogleFonts.sourceSansPro(
   fontWeight: FontWeight.w700,
+);
+
+TextStyle regularBebasTextStyle = GoogleFonts.bebasNeue(
+  fontWeight: FontWeight.w400,
 );
