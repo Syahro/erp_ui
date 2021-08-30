@@ -104,7 +104,24 @@ class EventPage extends StatelessWidget {
                       timeEvent: '24 Jan 21, 09:00 AM',
                       description:
                           'April is also National Poetry Month. Now\nthere is a great theme for a fun family night!\nCombine poetry readings by students...',
-                    )
+                    ),
+                    Spacer(),
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: [
+                        Container(
+                          height: 5,
+                          width: 134,
+                          decoration: BoxDecoration(
+                            color: lightGreyColor.withOpacity(0.3),
+                            borderRadius: BorderRadius.circular(3),
+                          ),
+                        )
+                      ],
+                    ),
+                    SizedBox(
+                      height: 5,
+                    ),
                   ],
                 ),
               ),
