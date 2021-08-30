@@ -2,6 +2,7 @@ import 'package:erp_ui/pages/ask_doubt_page.dart';
 import 'package:erp_ui/pages/change_password_page.dart';
 import 'package:erp_ui/pages/date_sheet_page.dart';
 import 'package:erp_ui/pages/event_page.dart';
+import 'package:erp_ui/pages/my_profile_page.dart';
 import 'package:erp_ui/theme.dart';
 import 'package:erp_ui/widget/card_menu.dart';
 import 'package:erp_ui/widget/card_menu_top.dart';
@@ -11,104 +12,6 @@ class HomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      // body: Container(
-      //   height: double.infinity,
-      //   width: double.infinity,
-      //   decoration: BoxDecoration(
-      //     gradient: LinearGradient(
-      //       begin: Alignment.topLeft,
-      //       end: Alignment.bottomRight,
-      //       colors: [
-      //         lightBlueColor,
-      //         darkBlueColor,
-      //       ],
-      //     ),
-      //   ),
-      //   child: Column(
-      //     children: [
-      //       Padding(
-      //         padding: EdgeInsets.only(
-      //           left: defaultMargin,
-      //           right: defaultMargin,
-      //           top: 80,
-      //           bottom: 30,
-      //         ),
-      //         child: Row(
-      //           mainAxisAlignment: MainAxisAlignment.spaceBetween,
-      //           children: [
-      //             Column(
-      //               crossAxisAlignment: CrossAxisAlignment.start,
-      //               children: [
-      //                 Text(
-      //                   'Hi Akshay',
-      //                   style: regularTextStyle.copyWith(
-      //                     fontSize: 30,
-      //                     color: whiteColor,
-      //                   ),
-      //                 ),
-      //                 SizedBox(
-      //                   height: 9,
-      //                 ),
-      //                 Text(
-      //                   'Class XI-B  |  Roll no: 04',
-      //                   style: regularTextStyle.copyWith(
-      //                     fontSize: 18,
-      //                     color: whiteColor.withOpacity(0.7),
-      //                   ),
-      //                 ),
-      //                 SizedBox(
-      //                   height: 10,
-      //                 ),
-      //                 Container(
-      //                   height: 24,
-      //                   width: 84,
-      //                   decoration: BoxDecoration(
-      //                     color: whiteColor,
-      //                     borderRadius: BorderRadius.circular(12),
-      //                   ),
-      //                   child: Center(
-      //                     child: Text(
-      //                       '2020-2021',
-      //                       style: regularTextStyle.copyWith(
-      //                         fontSize: 14,
-      //                         color: blueColor,
-      //                       ),
-      //                     ),
-      //                   ),
-      //                 )
-      //               ],
-      //             ),
-      //             Container(
-      //               height: 62,
-      //               width: 62,
-      //               decoration: BoxDecoration(
-      //                 color: lightGreyColor,
-      //                 borderRadius: BorderRadius.circular(31),
-      //                 border: Border.all(
-      //                   color: whiteColor,
-      //                 ),
-      //               ),
-      //             )
-      //           ],
-      //         ),
-      //       ),
-      //       Container(
-      //         width: double.infinity,
-      //         height: 101,
-      //         color: Colors.transparent,
-      //       ),
-      //       Container(
-      //         width: double.infinity,
-      //         height: 300,
-      //         decoration: BoxDecoration(
-      //           color: whiteColor,
-      //           borderRadius: BorderRadius.vertical(
-      //             top: Radius.circular(35),
-      //           ),
-      //         ),
-      //       )
-      //     ],
-      //   ),
       body: Stack(
         children: [
           Container(
@@ -126,75 +29,87 @@ class HomePage extends StatelessWidget {
             ),
             child: ListView(
               children: [
-                Stack(
-                  children: [
-                    Padding(
-                      padding: EdgeInsets.only(
-                        left: 16,
-                        right: 16,
-                        top: 69,
-                      ),
-                      child: Row(
-                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                        children: [
-                          Column(
-                            crossAxisAlignment: CrossAxisAlignment.start,
-                            children: [
-                              Text(
-                                'Hi Akshay',
-                                style: regularTextStyle.copyWith(
-                                  fontSize: 30,
-                                  color: whiteColor,
-                                ),
-                              ),
-                              SizedBox(
-                                height: 9,
-                              ),
-                              Text(
-                                'Class XI-B  |  Roll no: 04',
-                                style: regularTextStyle.copyWith(
-                                  fontSize: 18,
-                                  color: whiteColor.withOpacity(0.4),
-                                ),
-                              ),
-                              SizedBox(
-                                height: 10,
-                              ),
-                              Container(
-                                height: 24,
-                                width: 84,
-                                decoration: BoxDecoration(
-                                  color: whiteColor,
-                                  borderRadius: BorderRadius.circular(12),
-                                ),
-                                child: Center(
-                                  child: Text(
-                                    '2020-2021',
-                                    style: regularTextStyle.copyWith(
-                                      fontSize: 14,
-                                      color: blueColor,
-                                    ),
-                                  ),
-                                ),
-                              )
-                            ],
-                          ),
-                          Container(
-                            width: 58,
-                            height: 58,
-                            decoration: BoxDecoration(
-                              color: whiteColor.withOpacity(0.6),
-                              borderRadius: BorderRadius.circular(29),
-                              border: Border.all(
-                                color: whiteColor,
-                              ),
-                            ),
-                          )
-                        ],
-                      ),
-                    ),
-                  ],
-                ),
+                // Stack(
+                //   children: [
+                //     Padding(
+                //       padding: EdgeInsets.only(
+                //         left: 16,
+                //         right: 16,
+                //         top: 69,
+                //       ),
+                //       child: Row(
+                //         mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                //         children: [
+                //           Column(
+                //             crossAxisAlignment: CrossAxisAlignment.start,
+                //             children: [
+                //               Text(
+                //                 'Hi Akshay',
+                //                 style: regularTextStyle.copyWith(
+                //                   fontSize: 30,
+                //                   color: whiteColor,
+                //                 ),
+                //               ),
+                //               SizedBox(
+                //                 height: 9,
+                //               ),
+                //               Text(
+                //                 'Class XI-B  |  Roll no: 04',
+                //                 style: regularTextStyle.copyWith(
+                //                   fontSize: 18,
+                //                   color: whiteColor.withOpacity(0.4),
+                //                 ),
+                //               ),
+                //               SizedBox(
+                //                 height: 10,
+                //               ),
+                //               Container(
+                //                 height: 24,
+                //                 width: 84,
+                //                 decoration: BoxDecoration(
+                //                   color: whiteColor,
+                //                   borderRadius: BorderRadius.circular(12),
+                //                 ),
+                //                 child: Center(
+                //                   child: Text(
+                //                     '2020-2021',
+                //                     style: regularTextStyle.copyWith(
+                //                       fontSize: 14,
+                //                       color: blueColor,
+                //                     ),
+                //                   ),
+                //                 ),
+                //               )
+                //             ],
+                //           ),
+                //           InkWell(
+                //             onTap: () {
+                //               Navigator.push(
+                //                 context,
+                //                 MaterialPageRoute(
+                //                   builder: (context) {
+                //                     return MyProfilePage();
+                //                   },
+                //                 ),
+                //               );
+                //             },
+                //             child: Container(
+                //               width: 58,
+                //               height: 58,
+                //               decoration: BoxDecoration(
+                //                 color: whiteColor.withOpacity(0.6),
+                //                 borderRadius: BorderRadius.circular(29),
+                //                 border: Border.all(
+                //                   color: whiteColor,
+                //                 ),
+                //               ),
+                //             ),
+                //           )
+                //         ],
+                //       ),
+                //     ),
+                //   ],
+                // ),
               ],
             ),
           ),
@@ -363,20 +278,112 @@ class HomePage extends StatelessWidget {
                     padding: EdgeInsets.only(
                       left: 16,
                       right: 16,
-                      top: 204,
+                      top: 69,
                     ),
-                    child: Row(
-                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    child: Column(
                       children: [
-                        CardMenuTop(
-                          imageUrl: 'assets/ic_attendance.png',
-                          value: '80.39 %',
-                          title: 'Attendance',
+                        Stack(
+                          children: [
+                            Padding(
+                              padding: EdgeInsets.only(
+                                left: 16,
+                                right: 16,
+                              ),
+                              child: Row(
+                                mainAxisAlignment:
+                                    MainAxisAlignment.spaceBetween,
+                                children: [
+                                  Column(
+                                    crossAxisAlignment:
+                                        CrossAxisAlignment.start,
+                                    children: [
+                                      Text(
+                                        'Hi Akshay',
+                                        style: regularTextStyle.copyWith(
+                                          fontSize: 30,
+                                          color: whiteColor,
+                                        ),
+                                      ),
+                                      SizedBox(
+                                        height: 9,
+                                      ),
+                                      Text(
+                                        'Class XI-B  |  Roll no: 04',
+                                        style: regularTextStyle.copyWith(
+                                          fontSize: 18,
+                                          color: whiteColor.withOpacity(0.4),
+                                        ),
+                                      ),
+                                      SizedBox(
+                                        height: 10,
+                                      ),
+                                      Container(
+                                        height: 24,
+                                        width: 84,
+                                        decoration: BoxDecoration(
+                                          color: whiteColor,
+                                          borderRadius:
+                                              BorderRadius.circular(12),
+                                        ),
+                                        child: Center(
+                                          child: Text(
+                                            '2020-2021',
+                                            style: regularTextStyle.copyWith(
+                                              fontSize: 14,
+                                              color: blueColor,
+                                            ),
+                                          ),
+                                        ),
+                                      )
+                                    ],
+                                  ),
+                                  InkWell(
+                                    onTap: () {
+                                      Navigator.push(
+                                        context,
+                                        MaterialPageRoute(
+                                          builder: (context) {
+                                            return MyProfilePage();
+                                          },
+                                        ),
+                                      );
+                                    },
+                                    child: Container(
+                                      width: 58,
+                                      height: 58,
+                                      decoration: BoxDecoration(
+                                        color: whiteColor.withOpacity(0.6),
+                                        borderRadius: BorderRadius.circular(29),
+                                        border: Border.all(
+                                          color: whiteColor,
+                                        ),
+                                      ),
+                                    ),
+                                  )
+                                ],
+                              ),
+                            ),
+                          ],
                         ),
-                        CardMenuTop(
-                          imageUrl: 'assets/ic_fees_due.png',
-                          value: '₹6400',
-                          title: 'Fees Due',
+                        Padding(
+                          padding: EdgeInsets.only(
+                            top: 37,
+                          ),
+                          child: Row(
+                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                            children: [
+                              CardMenuTop(
+                                imageUrl: 'assets/ic_attendance.png',
+                                value: '80.39 %',
+                                title: 'Attendance',
+                              ),
+                              CardMenuTop(
+                                imageUrl: 'assets/ic_fees_due.png',
+                                value: '₹6400',
+                                title: 'Fees Due',
+                              ),
+                            ],
+                          ),
                         ),
                       ],
                     ),
