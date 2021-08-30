@@ -1,5 +1,6 @@
 import 'package:erp_ui/pages/ask_doubt_page.dart';
 import 'package:erp_ui/pages/change_password_page.dart';
+import 'package:erp_ui/pages/date_sheet_page.dart';
 import 'package:erp_ui/theme.dart';
 import 'package:erp_ui/widget/card_menu.dart';
 import 'package:erp_ui/widget/card_menu_top.dart';
@@ -255,9 +256,21 @@ class HomePage extends StatelessWidget {
                                   imageUrl: 'assets/ic_results.png',
                                   title: 'Result',
                                 ),
-                                CardMenu(
-                                  imageUrl: 'assets/ic_date_sheet.png',
-                                  title: 'Date Sheet',
+                                InkWell(
+                                  onTap: () {
+                                    Navigator.push(
+                                      context,
+                                      MaterialPageRoute(
+                                        builder: (context) {
+                                          return DateSheetPage();
+                                        },
+                                      ),
+                                    );
+                                  },
+                                  child: CardMenu(
+                                    imageUrl: 'assets/ic_date_sheet.png',
+                                    title: 'Date Sheet',
+                                  ),
                                 ),
                                 InkWell(
                                   onTap: () {
