@@ -1,6 +1,7 @@
 import 'package:erp_ui/pages/ask_doubt_page.dart';
 import 'package:erp_ui/pages/change_password_page.dart';
 import 'package:erp_ui/pages/date_sheet_page.dart';
+import 'package:erp_ui/pages/event_page.dart';
 import 'package:erp_ui/theme.dart';
 import 'package:erp_ui/widget/card_menu.dart';
 import 'package:erp_ui/widget/card_menu_top.dart';
@@ -312,9 +313,21 @@ class HomePage extends StatelessWidget {
                                     title: 'Change Password',
                                   ),
                                 ),
-                                CardMenu(
-                                  imageUrl: 'assets/ic_event.png',
-                                  title: 'Events',
+                                InkWell(
+                                  onTap: () {
+                                    Navigator.push(
+                                      context,
+                                      MaterialPageRoute(
+                                        builder: (context) {
+                                          return EventPage();
+                                        },
+                                      ),
+                                    );
+                                  },
+                                  child: CardMenu(
+                                    imageUrl: 'assets/ic_event.png',
+                                    title: 'Events',
+                                  ),
                                 ),
                                 CardMenu(
                                   imageUrl: 'assets/ic_logout.png',
