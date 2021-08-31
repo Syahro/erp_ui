@@ -1,3 +1,4 @@
+import 'package:erp_ui/pages/holiday_page.dart';
 import 'package:erp_ui/theme.dart';
 import 'package:erp_ui/widget/date_name.dart';
 import 'package:erp_ui/widget/dates.dart';
@@ -71,11 +72,23 @@ class AttendancePage extends StatelessWidget {
                             Expanded(
                               flex: 5,
                               child: Center(
-                                child: Text(
-                                  'HOLIDAY',
-                                  style: boldTextStyle.copyWith(
-                                    fontSize: 13,
-                                    color: whiteColor,
+                                child: InkWell(
+                                  onTap: () {
+                                    Navigator.push(
+                                      context,
+                                      MaterialPageRoute(
+                                        builder: (context) {
+                                          return HolidayPage();
+                                        },
+                                      ),
+                                    );
+                                  },
+                                  child: Text(
+                                    'HOLIDAY',
+                                    style: boldTextStyle.copyWith(
+                                      fontSize: 13,
+                                      color: whiteColor,
+                                    ),
                                   ),
                                 ),
                               ),
