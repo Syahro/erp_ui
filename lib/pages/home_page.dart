@@ -1,4 +1,5 @@
 import 'package:erp_ui/pages/ask_doubt_page.dart';
+import 'package:erp_ui/pages/attendance_page.dart';
 import 'package:erp_ui/pages/change_password_page.dart';
 import 'package:erp_ui/pages/date_sheet_page.dart';
 import 'package:erp_ui/pages/event_page.dart';
@@ -372,10 +373,22 @@ class HomePage extends StatelessWidget {
                           child: Row(
                             mainAxisAlignment: MainAxisAlignment.spaceBetween,
                             children: [
-                              CardMenuTop(
-                                imageUrl: 'assets/ic_attendance.png',
-                                value: '80.39 %',
-                                title: 'Attendance',
+                              InkWell(
+                                onTap: () {
+                                  Navigator.push(
+                                    context,
+                                    MaterialPageRoute(
+                                      builder: (context) {
+                                        return AttendancePage();
+                                      },
+                                    ),
+                                  );
+                                },
+                                child: CardMenuTop(
+                                  imageUrl: 'assets/ic_attendance.png',
+                                  value: '80.39 %',
+                                  title: 'Attendance',
+                                ),
                               ),
                               CardMenuTop(
                                 imageUrl: 'assets/ic_fees_due.png',

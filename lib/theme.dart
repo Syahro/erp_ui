@@ -13,6 +13,8 @@ Color whiteColor = Color(0XFFFFFFFF);
 Color cardHomeColor = Color(0XFFF5F6FC);
 Color lightBlackColor = Color(0XFF777777);
 Color darkBlackColor = Color(0XFF323643);
+Color redColor = Color(0XFFE92020);
+Color greenColor = Color(0XFF0BAC00);
 
 TextStyle regularTextStyle = GoogleFonts.sourceSansPro(
   fontWeight: FontWeight.w400,
