@@ -3,6 +3,7 @@ import 'package:erp_ui/pages/attendance_page.dart';
 import 'package:erp_ui/pages/change_password_page.dart';
 import 'package:erp_ui/pages/date_sheet_page.dart';
 import 'package:erp_ui/pages/event_page.dart';
+import 'package:erp_ui/pages/fees_due_page.dart';
 import 'package:erp_ui/pages/my_profile_page.dart';
 import 'package:erp_ui/theme.dart';
 import 'package:erp_ui/widget/card_menu.dart';
@@ -390,10 +391,22 @@ class HomePage extends StatelessWidget {
                                   title: 'Attendance',
                                 ),
                               ),
-                              CardMenuTop(
-                                imageUrl: 'assets/ic_fees_due.png',
-                                value: '₹6400',
-                                title: 'Fees Due',
+                              InkWell(
+                                onTap: () {
+                                  Navigator.push(
+                                    context,
+                                    MaterialPageRoute(
+                                      builder: (context) {
+                                        return FeesDuePage();
+                                      },
+                                    ),
+                                  );
+                                },
+                                child: CardMenuTop(
+                                  imageUrl: 'assets/ic_fees_due.png',
+                                  value: '₹6400',
+                                  title: 'Fees Due',
+                                ),
                               ),
                             ],
                           ),
