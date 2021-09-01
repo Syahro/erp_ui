@@ -1,3 +1,4 @@
+import 'package:erp_ui/pages/pay_online_page.dart';
 import 'package:erp_ui/theme.dart';
 import 'package:erp_ui/widget/fees_card.dart';
 import 'package:flutter/material.dart';
@@ -76,12 +77,24 @@ class FeesDuePage extends StatelessWidget {
                   children: [
                     Column(
                       children: [
-                        FeesCard(
-                          reciptNo: '#98761',
-                          monthRecipt: 'October',
-                          paymentDate: '10 Oct 20',
-                          totalAmount: '₹999',
-                          hasPay: false,
+                        InkWell(
+                          onTap: () {
+                            Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                builder: (context) {
+                                  return PayOnlinePage();
+                                },
+                              ),
+                            );
+                          },
+                          child: FeesCard(
+                            reciptNo: '#98761',
+                            monthRecipt: 'October',
+                            paymentDate: '10 Oct 20',
+                            totalAmount: '₹999',
+                            hasPay: false,
+                          ),
                         ),
                         SizedBox(
                           height: 15.7,
