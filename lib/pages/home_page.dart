@@ -1,4 +1,5 @@
 import 'package:erp_ui/pages/ask_doubt_page.dart';
+import 'package:erp_ui/pages/assignment_page.dart';
 import 'package:erp_ui/pages/attendance_page.dart';
 import 'package:erp_ui/pages/change_password_page.dart';
 import 'package:erp_ui/pages/date_sheet_page.dart';
@@ -171,9 +172,21 @@ class HomePage extends StatelessWidget {
                                     title: 'Play Quiz',
                                   ),
                                 ),
-                                CardMenu(
-                                  imageUrl: 'assets/ic_assignment.png',
-                                  title: 'Assignment',
+                                InkWell(
+                                  onTap: () {
+                                    Navigator.push(
+                                      context,
+                                      MaterialPageRoute(
+                                        builder: (context) {
+                                          return AssignmentPage();
+                                        },
+                                      ),
+                                    );
+                                  },
+                                  child: CardMenu(
+                                    imageUrl: 'assets/ic_assignment.png',
+                                    title: 'Assignment',
+                                  ),
                                 ),
                                 CardMenu(
                                   imageUrl: 'assets/ic_holiday.png',
