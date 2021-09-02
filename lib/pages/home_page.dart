@@ -5,6 +5,7 @@ import 'package:erp_ui/pages/date_sheet_page.dart';
 import 'package:erp_ui/pages/event_page.dart';
 import 'package:erp_ui/pages/fees_due_page.dart';
 import 'package:erp_ui/pages/my_profile_page.dart';
+import 'package:erp_ui/pages/play_quiz_page.dart';
 import 'package:erp_ui/theme.dart';
 import 'package:erp_ui/widget/card_menu.dart';
 import 'package:erp_ui/widget/card_menu_top.dart';
@@ -154,9 +155,21 @@ class HomePage extends StatelessWidget {
                               spacing: 17,
                               runSpacing: 16,
                               children: [
-                                CardMenu(
-                                  imageUrl: 'assets/ic_quiz.png',
-                                  title: 'Play Quiz',
+                                InkWell(
+                                  onTap: () {
+                                    Navigator.push(
+                                      context,
+                                      MaterialPageRoute(
+                                        builder: (context) {
+                                          return PlayQuizPage();
+                                        },
+                                      ),
+                                    );
+                                  },
+                                  child: CardMenu(
+                                    imageUrl: 'assets/ic_quiz.png',
+                                    title: 'Play Quiz',
+                                  ),
                                 ),
                                 CardMenu(
                                   imageUrl: 'assets/ic_assignment.png',

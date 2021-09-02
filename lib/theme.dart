@@ -5,6 +5,7 @@ final double defaultMargin = 30.0;
 
 Color blueColor = Color(0XFF6184C7);
 Color darkBlueColor = Color(0XFF345FB4);
+Color veryDarkBlueColor = Color(0XFF05518B);
 Color lightBlueColor = Color(0XFF6789CA);
 Color blackColor = Color(0XFF313131);
 Color darkGreyColor = Color(0XFF313131);
@@ -15,6 +16,7 @@ Color lightBlackColor = Color(0XFF777777);
 Color darkBlackColor = Color(0XFF323643);
 Color redColor = Color(0XFFE92020);
 Color greenColor = Color(0XFF0BAC00);
+Color lightGreenColor = Color(0XFF46D9BF);
 
 TextStyle regularTextStyle = GoogleFonts.sourceSansPro(
   fontWeight: FontWeight.w400,
