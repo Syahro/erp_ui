@@ -7,6 +7,7 @@ import 'package:erp_ui/pages/event_page.dart';
 import 'package:erp_ui/pages/fees_due_page.dart';
 import 'package:erp_ui/pages/my_profile_page.dart';
 import 'package:erp_ui/pages/play_quiz_page.dart';
+import 'package:erp_ui/pages/time_table_page.dart';
 import 'package:erp_ui/theme.dart';
 import 'package:erp_ui/widget/card_menu.dart';
 import 'package:erp_ui/widget/card_menu_top.dart';
@@ -192,9 +193,21 @@ class HomePage extends StatelessWidget {
                                   imageUrl: 'assets/ic_holiday.png',
                                   title: 'School Holiday',
                                 ),
-                                CardMenu(
-                                  imageUrl: 'assets/ic_calendra.png',
-                                  title: 'Time Table',
+                                InkWell(
+                                  onTap: () {
+                                    Navigator.push(
+                                      context,
+                                      MaterialPageRoute(
+                                        builder: (contexxt) {
+                                          return TimeTablepage();
+                                        },
+                                      ),
+                                    );
+                                  },
+                                  child: CardMenu(
+                                    imageUrl: 'assets/ic_calendra.png',
+                                    title: 'Time Table',
+                                  ),
                                 ),
                                 CardMenu(
                                   imageUrl: 'assets/ic_results.png',
