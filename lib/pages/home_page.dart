@@ -9,6 +9,7 @@ import 'package:erp_ui/pages/holiday_page.dart';
 import 'package:erp_ui/pages/my_profile_page.dart';
 import 'package:erp_ui/pages/play_quiz_page.dart';
 import 'package:erp_ui/pages/result_page.dart';
+import 'package:erp_ui/pages/support_page.dart';
 import 'package:erp_ui/pages/time_table_page.dart';
 import 'package:erp_ui/theme.dart';
 import 'package:erp_ui/widget/card_menu.dart';
@@ -275,9 +276,21 @@ class HomePage extends StatelessWidget {
                                   imageUrl: 'assets/ic_gallery.png',
                                   title: 'School Gallery',
                                 ),
-                                CardMenu(
-                                  imageUrl: 'assets/ic_leave.png',
-                                  title: 'Leave Application',
+                                InkWell(
+                                  onTap: () {
+                                    Navigator.push(
+                                      context,
+                                      MaterialPageRoute(
+                                        builder: (context) {
+                                          return SupportPage();
+                                        },
+                                      ),
+                                    );
+                                  },
+                                  child: CardMenu(
+                                    imageUrl: 'assets/ic_leave.png',
+                                    title: 'Leave Application',
+                                  ),
                                 ),
                                 InkWell(
                                   onTap: () {
