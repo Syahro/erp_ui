@@ -5,8 +5,10 @@ import 'package:erp_ui/pages/change_password_page.dart';
 import 'package:erp_ui/pages/date_sheet_page.dart';
 import 'package:erp_ui/pages/event_page.dart';
 import 'package:erp_ui/pages/fees_due_page.dart';
+import 'package:erp_ui/pages/holiday_page.dart';
 import 'package:erp_ui/pages/my_profile_page.dart';
 import 'package:erp_ui/pages/play_quiz_page.dart';
+import 'package:erp_ui/pages/result_page.dart';
 import 'package:erp_ui/pages/time_table_page.dart';
 import 'package:erp_ui/theme.dart';
 import 'package:erp_ui/widget/card_menu.dart';
@@ -189,9 +191,21 @@ class HomePage extends StatelessWidget {
                                     title: 'Assignment',
                                   ),
                                 ),
-                                CardMenu(
-                                  imageUrl: 'assets/ic_holiday.png',
-                                  title: 'School Holiday',
+                                InkWell(
+                                  onTap: () {
+                                    Navigator.push(
+                                      context,
+                                      MaterialPageRoute(
+                                        builder: (context) {
+                                          return HolidayPage();
+                                        },
+                                      ),
+                                    );
+                                  },
+                                  child: CardMenu(
+                                    imageUrl: 'assets/ic_holiday.png',
+                                    title: 'School Holiday',
+                                  ),
                                 ),
                                 InkWell(
                                   onTap: () {
@@ -209,9 +223,21 @@ class HomePage extends StatelessWidget {
                                     title: 'Time Table',
                                   ),
                                 ),
-                                CardMenu(
-                                  imageUrl: 'assets/ic_results.png',
-                                  title: 'Result',
+                                InkWell(
+                                  onTap: () {
+                                    Navigator.push(
+                                      context,
+                                      MaterialPageRoute(
+                                        builder: (context) {
+                                          return ResultPage();
+                                        },
+                                      ),
+                                    );
+                                  },
+                                  child: CardMenu(
+                                    imageUrl: 'assets/ic_results.png',
+                                    title: 'Result',
+                                  ),
                                 ),
                                 InkWell(
                                   onTap: () {
