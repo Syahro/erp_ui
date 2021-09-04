@@ -1,16 +1,16 @@
 # erp_ui
 
-A new Flutter project.
+A new ERP School Flutter project.
+
+design by Akshay Syal.
 
 ## Getting Started
 
-This project is a starting point for a Flutter application.
+This project is a starting point for a Flutter application. I Just implement that include in UI Design for my practice and many flaws of using some widget on it.
 
-A few resources to get you started if this is your first Flutter project:
+Big Thank's to Akshay Syal for the Design that can i use for my practice.
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+Here is some UI View.
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+<img width="563" alt="cover" src="https://user-images.githubusercontent.com/42954205/132082886-d9b74979-ff7d-49a5-a8ed-af8c2bedac82.png">
+
